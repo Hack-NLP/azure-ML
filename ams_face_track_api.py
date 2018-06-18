@@ -691,7 +691,7 @@ def main():
     
     #setp 2: Upload video
     #setup path for input video
-    NAME = os.path.basename(VIDEO_PATH)[:-4]
+    NAME = os.path.basename(VIDEO_PATH)
     ASSET_FINAL_NAME = 'analysed_'+NAME
     processor_id, asset_id= upload_video(access_token, NAME, sto_account_name, VIDEO_PATH)
     
